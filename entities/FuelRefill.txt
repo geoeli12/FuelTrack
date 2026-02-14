@@ -1,0 +1,31 @@
+{
+  "name": "FuelRefill",
+  "type": "object",
+  "properties": {
+    "gallons_added": {
+      "type": "number",
+      "description": "Gallons added during refill"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date of refill"
+    },
+    "cost": {
+      "type": "number",
+      "description": "Cost of the refill (optional)"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Optional notes"
+    },
+    "running_total_after": {
+      "type": "number",
+      "description": "Running total after this refill"
+    }
+  },
+  "required": [
+    "gallons_added",
+    "date"
+  ]
+}

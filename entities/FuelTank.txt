@@ -1,0 +1,18 @@
+{
+  "name": "FuelTank",
+  "type": "object",
+  "properties": {
+    "current_gallons": {
+      "type": "number",
+      "description": "Current gallons in tank"
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Last time the tank level was updated"
+    }
+  },
+  "required": [
+    "current_gallons"
+  ]
+}

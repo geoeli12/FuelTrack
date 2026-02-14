@@ -1,0 +1,53 @@
+{
+  "name": "FuelReading",
+  "type": "object",
+  "properties": {
+    "driver_id": {
+      "type": "string",
+      "description": "Reference to the driver"
+    },
+    "driver_name": {
+      "type": "string",
+      "description": "Driver's name for display"
+    },
+    "before_image": {
+      "type": "string",
+      "description": "URL of fuel gauge image before use"
+    },
+    "after_image": {
+      "type": "string",
+      "description": "URL of fuel gauge image after use"
+    },
+    "before_reading": {
+      "type": "number",
+      "description": "Gauge reading before use (gallons)"
+    },
+    "after_reading": {
+      "type": "number",
+      "description": "Gauge reading after use (gallons)"
+    },
+    "gallons_used": {
+      "type": "number",
+      "description": "Calculated gallons used (before - after)"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date of the reading"
+    },
+    "time": {
+      "type": "string",
+      "description": "Time of the reading"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Optional notes"
+    }
+  },
+  "required": [
+    "driver_id",
+    "before_reading",
+    "after_reading",
+    "date"
+  ]
+}
